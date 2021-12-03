@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Add padding to containers */
+    .container {
+        padding: 16px;
+        background-color: white;
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .registerbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+        color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
+</script> <!-- include socket.io client side script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    var webSocket;
+    //문서로드와 함께 웹소켓 서버에 연결한다.
+    window.addEventListener("load", function () {
+        connectServer();
+        //버튼 이벤트 
+        $("button").click(function () {
+            //alert("전송하시겠습니까?");
+            send();
+        });
+    });
+    //웹소켓 서버에 접속 
+    function connectServer() {
+        webSocket = new WebSocket("ws://127.0.0.1:7979");
+
+        //이벤트 처리 
+        webSocket.onopen = function () {
+            document.getElementById("status");
+            status.innerText = "접속성공";
+        }
+        webSocket.onclose = function () {
+            document.getElementById("status");
+            status.innerText = "접속해제";
+        }
+        webSocket.onerror = function (err) {
+            document.getElementById("status");
+            status.innerText = "에러발생" + err;
+        }
+            //서버에서 전송된 데이터 받기!
+        webSocket.onmessage = function (e) {
+            console.log(e.data); //서버의 json 데이터가 날아와야 한다. 
+        }
+    }
+    //비동기로 전송한다.
+        function send() {
+            $.ajax({
+                url: "http://localhost:9999/input",
+                type: "POST",
+                data: {
+                    "lat": $("input[name='lat']").val(),
+                    "lng": $("input[name='lng']").val(),
+                    "content": $("input[name='content']").val()
+                },
+                success: function (result) {
+
+                }
+            });
+        }
+    
+</script>
+<body>
+    <form action="/action_page.php">
+        <div class="container">
+            <h1 id="status">무단투기 등록</h1>
+            <hr>
+            <input type="text" placeholder="위도 입력" name="email" required>
+            <input type="text" placeholder="경도 입력" name="psw" required>
+            <input type="text" placeholder="설명" name="psw-repeat" required>
+            <hr>
+            <button type="button" class="registerbtn">입력하기</button>
+        </div>
+    </form>
+</body>
+</html>

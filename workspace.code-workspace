@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../lowdb"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "map"
+	}
+}
