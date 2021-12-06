@@ -53,7 +53,7 @@ html {
 }
 
 body {
-    background-color: var(--color-grey);
+    background-color: var(--color-white);
 }
 
 .header {
@@ -63,4 +63,34 @@ body {
     text-align: center;
     padding: 10px;
 
+}
+
+.script {
+    font-size: var(--size-2);
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    font-size: var(--size-2);
+}
+
+.box {
+    font-size: var(--size-2);   
+    border: solid var(--border-width);  
+    border-color: var(--color-grey);
+    border-radius: 10px;
+    padding: 10px;  
+    color: black;
+    box-shadow: -5px -5px 20px var(--color-white),  5px 5px 20px var(--color-grey);
+}
+
+.box :hover {
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-grey);
+}
+
+.emoji {
+    padding: 0px, 0px, 30px;
+    max-width: 10%;
+    max-height: 100%;
 }

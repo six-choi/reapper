@@ -15,9 +15,9 @@
             { lat: 37.59381, lng: 126.91354 }
         ];
         createIcon(map, pointArray, [
-            "./images/smile.png",
-            "./images/smile.png",
-            "./images/smile.png"],
+            "./images/reddot.png",
+            "./images/reddot.png",
+            "./images/reddot.png"],
         );
 
         //맵이 완료된 시점에 웹소켓 서버와 연결을 완료해 놓자!
@@ -65,7 +65,7 @@
                 var json = JSON.parse(e.data); //String에서 json으로 파싱 
 
                 createIcon([{ lat: parseFloat(json.lat), lng: parseFloat(json.lng) }], [
-                    "./images/smile.png"],
+                    "./images/reddot.png"],
                     [json.content]);
             }
         }
