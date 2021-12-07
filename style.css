@@ -103,6 +103,7 @@ body {
     border: solid var(--border-width);  
     border-color: var(--color-grey);
     border-radius: 10px;
+    text-align: justify;
     margin: 1px 15px 1px 15px;
     padding: 15px;  
     color: black;

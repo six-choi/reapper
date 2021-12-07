@@ -100,6 +100,10 @@
         function error(err) {
             $("#result").text("추적 실패 = " + err.code);
         }
+
+     const drawStar = (target) => {
+            document.querySelector(`.star span`).style.width = `${target.value * 10}%`;
+        }
 </script>
 <script>
     document.getElementById("files").onchange = function () {
@@ -158,7 +162,7 @@
                          border-radius: 3px; 
                          padding-left: 10px; 
                          background-color: white;
-                         box-shadow: -5px -5px 20px white, 5px 5px 20px grey;">
+                         box-shadow: -5px -5px 5px white, 5px 5px 5px grey;">
                 <option value="none">-선택-</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
@@ -166,6 +170,103 @@
             </select>
             <br>
             <br>
+            <p style="font-size: 13px;">달</p>
+            <br>
+        </div>
+    </form>
+    <hr style="margin: 0;">
+    <form action="/action_page.php">
+        <div class="container">
+            <h1 id="status"> 청결도</h1>
+            <br>
+            <div>
+            <p style="font-size: 10px; padding: 0px 10px 0px 10px;">매우 더러움
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                매우 깨끗함</p>
+            </div>
+            <span class="star">
+                ★★★★★★★
+                <span>★★★★★★★</span>
+                <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+            </span>
+        </div>
+    </form>
+    <hr style="margin: 0;">
+    <form action="/action_page.php">
+        <div class="container">
+            <h1 id="status">폐기물 종류</h1>
+            <br>
+        </div>
+        <div class="check">
+            <div>
+                <input type="checkbox" name="Nomal" value="yes">
+                일반쓰레기
+            </div>
+            <div>
+                <input type="checkbox" name="Recycle" value="yes">
+                재활용쓰레기
+            </div>
+        </div>
+        <div class="check">
+            <div>
+                <input type="checkbox" name="Food" value="yes">
+                음식물쓰레기
+            </div>
+            <div>
+                <input type="checkbox" name="Mix" value="yes">
+                혼합된쓰레기
+            </div>
+        </div>
+        <div class="container">
             <button type="button" class="registerbtn">등록하기</button>
         </div>
     </form>
