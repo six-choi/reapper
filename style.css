@@ -38,7 +38,7 @@ html {
     --kerning-1: -0.2vw;
     --size-2: 5vw;
     --lineh-2: 0.85em;
-    --size-3-double: 1.8vw;
+    --size-3-double: 3.8vw;
     --lineh-3-double: 1em;
     --size-3: 1.3vw;
     --lineh-3: 1.1em;
@@ -62,25 +62,49 @@ body {
     background-color: var(--color-green);
     text-align: center;
     padding: 10px;
+}
 
+.head {
+    font-size: var(--size-2);
+    margin: 11px;
+    
 }
 
 .script {
     font-size: var(--size-2);
-    padding: 10px;
-    text-align: center;
+    margin: 8px;
+    padding: 10px 10px 1px 10px;
 }
 
-.button {
+.btn {
+    text-decoration: none;
+    text-align: center;
     font-size: var(--size-2);
+    background-color:var(--color-green);
+    color: var(--color-white);
+    padding: 10px 20px 10px 20px;
+    margin: 8px;
+    width: 95%;
+    display:inline-block;
+    border-radius: 8px;
+    transition:all 0.1s;
+    cursor: pointer;
+}
+
+.small {
+    font-size: var(--size-3-double);
+    color: #727272;
+    margin-top: 10px;
+    display: inline block;
 }
 
 .box {
-    font-size: var(--size-2);   
+    font-size: var(--size-3-double);   
     border: solid var(--border-width);  
     border-color: var(--color-grey);
     border-radius: 10px;
-    padding: 10px;  
+    margin: 1px 15px 1px 15px;
+    padding: 15px;  
     color: black;
     box-shadow: -5px -5px 20px var(--color-white),  5px 5px 20px var(--color-grey);
 }
@@ -93,4 +117,11 @@ body {
     padding: 0px, 0px, 30px;
     max-width: 10%;
     max-height: 100%;
+}
+
+#footer {
+    text-align: center;
+    font-size: var(--size-3-double);
+    color: var(--color-white);
+    padding-top: 12px;
 }
