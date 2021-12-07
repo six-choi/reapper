@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+html, body, body div, span, object, 
+iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, abbr, address, cite, 
+code, del, dfn, em, img, ins, kbd, q, samp, 
+small, strong, sub, sup, var, b, i, dl, dt, 
+dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, figure, footer, header, menu, nav, 
+section, time, mark, audio, video, details, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root{
+    --color-red: #f00;
+    --color-green: #4BB69C;
+    --color-blue: #00f;
+    --color-white: #FFFFFF;
+    --color-grey: #e5e5e5;
+    --color-grey-bg: #ccc;
+    --size-1: 14.5vw;
+    --lineh-1: 0.8em;
+    --kerning-1: -0.2vw;
+    --size-2: 5vw;
+    --lineh-2: 0.85em;
+    --size-3-double: 3.8vw;
+    --lineh-3-double: 1em;
+    --size-3: 1.3vw;
+    --lineh-3: 1.1em;
+    --size-4: 0.9vw;
+    --lineh-4: 1.3em;
+    --size-5: 0.7vw;
+    --lineh-5: 1.2em;
+    --border-width: 2px;
+    --lineh-single: 1em;
+    --size-body: 0.9vw;
+    --font-family-article: 'SNR';
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+.header {
+    font-size: var(--size-2);
+    color: var(--color-white);
+    background-color: var(--color-green);
+    text-align: center;
+    padding: 10px;
+}
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Add padding to containers */
+    .container {
+        padding: 16px;
+        background-color: white;
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 5px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 4px solid #f1f1f1;
+        margin-bottom: 5px;
+    }
+
+    /* Set a style for the submit button */
+    .registerbtn {
+        background-color: #369483;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+        color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+    }

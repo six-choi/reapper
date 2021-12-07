@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제보하기</title>
+    <link href="input.css" rel="stylesheet" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
+</script> <!-- include socket.io client side script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    var webSocket;
+    //문서로드와 함께 웹소켓 서버에 연결한다.
+    window.addEventListener("load", function () {
+        connectServer();
+        //버튼 이벤트 
+        $("button").click(function () {
+            //alert("전송하시겠습니까?");
+            send();
+        });
+    });
+    //웹소켓 서버에 접속 
+    function connectServer() {
+        webSocket = new WebSocket("ws://127.0.0.1:7979");
+
+        //이벤트 처리 
+        webSocket.onopen = function () {
+            document.getElementById("status");
+            status.innerText = "접속성공";
+        }
+        webSocket.onclose = function () {
+            document.getElementById("status");
+            status.innerText = "접속해제";
+        }
+        webSocket.onerror = function (err) {
+            document.getElementById("status");
+            status.innerText = "에러발생" + err;
+        }
+            //서버에서 전송된 데이터 받기!
+        webSocket.onmessage = function (e) {
+            console.log(e.data); //서버의 json 데이터가 날아와야 한다. 
+        }
+    }
+    //비동기로 전송한다.
+        function send() {
+            $.ajax({
+                url: "http://localhost:9999/input",
+                type: "POST",
+                data: {
+                    "lat": $("input[name='lat']").val(),
+                    "lng": $("input[name='lng']").val(),
+                    "content": $("input[name='content']").val()
+                },
+                success: function (result) {
+
+                }
+            });
+        }
+    
+</script>
+<body>
+    <div class="header">
+    <h1>리퍼: 쓰레기 지도 <img src=./images/Vector.png></h1>
+    </div>
+    <form action="/action_page.php">
+        <div class="container">
+            <br>
+            <h1 id="status">닉네임을 입력하세요</h1>
+            <br>
+            <input type="text" placeholder="제보된 내용과 함께 표시됩니다. 8자 이내로 설정해주세요" name="email" required>
+            <br>
+            <br>
+            <h1 id="status">휴대전화 번호를 입력해주세요 (선택)</h1>
+            <br>
+            <input type="text" placeholder="제보된 내용과 함께 표시되지 않습니다." name="psw" required>
+            <br>
+            <br>
+            <h1 id="status">개인정보 이용동의<input type="checkbox" name="agree" value="yes"></h1>
+            <br>
+            <p style="margin: 8px;">휴대전화 번호는 ~~~에 사용되며, 어느 기간 동안 보관돼요. 입력하지 않아도 제보는 할 수 있지만, ~~ 이벤트(?)에는 참여할 수 없어요.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" onclick="location.href='input.html' "class="registerbtn">동의하고 시작하기</button>
+        </div>
+    </form>
+</body>
+</html>
