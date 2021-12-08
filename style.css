@@ -62,7 +62,6 @@ body {
     color: var(--color-white);
     background-color: var(--color-green);
     text-align: center;
-    padding: 10px;
 }
 
 nav {
@@ -75,7 +74,7 @@ nav {
     맞춰짐*/
   min-height: 8vh;
   background-color: var(--color-green);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .logo {
@@ -83,7 +82,7 @@ nav {
   text-transform: uppercase;
   /* 각 글자 2px씩 간격을 줌*/
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: var(--size-2);
 }
 
 .nav-links {
@@ -128,7 +127,7 @@ nav {
     overflow-x: hidden;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     right: 0;
     height: 92vh;
