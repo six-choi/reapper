@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제보하기</title>
     <link href="input.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
+    </script> <!-- include socket.io client side script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
-</script> <!-- include socket.io client side script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     var webSocket;
     //문서로드와 함께 웹소켓 서버에 연결한다.
@@ -86,11 +86,9 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
             <button type="button" onclick="location.href='input.html' "class="registerbtn">동의하고 시작하기</button>
         </div>
     </form>
+    <script type="module" src="secinput.js"></script>
 </body>
 </html>

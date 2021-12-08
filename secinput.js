@@ -11,13 +11,10 @@ export async function send() {
   const lng = mapMarker.getPosition().lng();
 
   console.log({ lat, lng });
-  const docRef = await addDoc(collection(db, "repper"), {
-    point: new GeoPoint(lat, lng),
-    Date:firebase.firestore.Timestamp.fromDate(new Date("December 8, 2021")),
-    Cleanness: 0,
-    Waste: ["일반 쓰레기", "음식물 쓰레기", "혼합된 쓰레기", "재활용 쓰레기"],
-    img:"img_url",
-    Placecondition: ["쓰레기가 여기 저기 흩어져 있어요", "분리수거되지 않고 혼합 배출되어 있어요", "세척되지 않은 채로 배출되어 있어요", "쓰레기 배출 금지 안내가 있는 곳에 배출되어 있어요", "잘못된 봉투로 배출되어 있어요"],
+  const docRef = await addDoc(collection(db, "repper-privacy"), {
+    agree: true,
+    phone_num:"01000000000",
+    name: "서원",
   });
   console.log(docRef.id);
   // $.ajax({
