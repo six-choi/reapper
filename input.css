@@ -19,6 +19,11 @@ section, time, mark, audio, video, details, summary {
     background: transparent;
 }
 
+a {
+        color: white;
+        text-decoration: none;
+    }
+
 html {
   box-sizing: border-box;
 }
@@ -130,11 +135,6 @@ body {
         opacity: 1;
         background-color: #85D789;
         color: white;
-    }
-    /* Add a blue text color to links */
-    a {
-        color: white;
-        text-decoration: none;
     }
 
     /* Set a grey background color and center the text of the "sign in" section */
