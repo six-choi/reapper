@@ -114,6 +114,23 @@ body {
         opacity: 1;
     }
 
+    .btn {
+        background-color: #e5ebea;
+        color: rgb(148, 143, 143);
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .btn:hover {
+        opacity: 1;
+        background-color: #85D789;
+        color: white;
+    }
     /* Add a blue text color to links */
     a {
         color: dodgerblue;
