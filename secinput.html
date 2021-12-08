@@ -46,12 +46,12 @@
     //비동기로 전송한다.
         function send() {
             $.ajax({
-                url: "http://localhost:9999/input",
+                url: "https://six-choi.github.io/repper/",
                 type: "POST",
                 data: {
-                    "lat": $("input[name='lat']").val(),
-                    "lng": $("input[name='lng']").val(),
-                    "content": $("input[name='content']").val()
+                    "name": $("input[name='name']").val(),
+                    "phone_num": $("input[name='phone_num']").val(),
+                    "agree": $("input[name='agree']").val()
                 },
                 success: function (result) {
 
@@ -62,7 +62,7 @@
 </script>
 <body>
     <div class="header">
-    <h1>리퍼: 쓰레기 지도 <img src=./images/Vector.png></h1>
+    <h1> <a href="index.html">리퍼: 쓰레기 지도</a> <img src=./images/Vector.png></h1>
     </div>
     <form action="/action_page.php">
         <div class="container">
@@ -80,6 +80,7 @@
             <h1 id="status">개인정보 이용동의<input type="checkbox" name="agree" value="yes"></h1>
             <br>
             <p style="margin: 8px;">휴대전화 번호는 ~~~에 사용되며, 어느 기간 동안 보관돼요. 입력하지 않아도 제보는 할 수 있지만, ~~ 이벤트(?)에는 참여할 수 없어요.</p>
+            <br>
             <br>
             <br>
             <br>
