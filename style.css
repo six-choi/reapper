@@ -17,6 +17,7 @@ section, time, mark, audio, video, details, summary {
     font-weight: normal;
     vertical-align: baseline;
     background: transparent;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 html {
