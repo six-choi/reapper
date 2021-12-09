@@ -277,4 +277,11 @@ body {
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
 }
+
+#footer {
+    text-align: center;
+    font-size: var(--size-3-double);
+    color: var(--color-white);
+    padding-top: 12px;
+}
     
