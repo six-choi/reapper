@@ -33,9 +33,6 @@ slideWrapper.addEventListener('mouseover', function () {
 });
 slideWrapper.addEventListener('mouseleave', function () {
     this.classList.remove('active');
-    autoSlider = setInterval(function () {
-        plusSlides(1);
-    }, 3000);
 });
 
 
@@ -72,9 +69,4 @@ function pagination() {
     });
     dots[slideIndex].classList.add('active');
 }
-
-pagination();
-var autoSlider = setInterval(function () {
-    plusSlides(1);
-}, 3000);
     

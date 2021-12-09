@@ -43,6 +43,7 @@ html {
     --lineh-1: 0.8em;
     --kerning-1: -0.2vw;
     --size-2: 5vw;
+    --size-2-double: 3.2vw;
     --lineh-2: 0.85em;
     --size-3-double: 3.8vw;
     --lineh-3-double: 1em;
@@ -68,6 +69,28 @@ body {
     background-color: var(--color-green);
     text-align: center;
     padding: 10px;
+}
+
+.script {
+    font-size: var(--size-3-double);
+    margin: 8px;
+    padding: 10px 10px 1px 10px;
+}
+
+.box {
+    font-size: var(--size-2-double);   
+    border: solid var(--border-width);  
+    border-color: var(--color-grey);
+    border-radius: 10px;
+    text-align: justify;
+    margin: 1px 15px 1px 15px;
+    padding: 15px;  
+    color: black;
+    box-shadow: -5px -5px 20px var(--color-white),  5px 5px 20px var(--color-grey);
+}
+
+.box :hover {
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-grey);
 }
 
     * {
