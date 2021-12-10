@@ -10,9 +10,9 @@ function myMap() {
 
   //마커 추가하기
   var pointArray = [
-    { lat: 37.59189, lng: 126.91273 },
-    { lat: 37.59172, lng: 126.9136 },
-    { lat: 37.59381, lng: 126.91354 },
+    { place: "은평구", lat: 37.59189, lng: 126.91273 },
+    { place: "은평구", lat: 37.59172, lng: 126.9136 },
+    { place: "은평구", lat: 37.59381, lng: 126.91354 },
   ];
   createIcon(map, pointArray);
 
@@ -36,8 +36,31 @@ function createIcon(map, pointArray) {
       map: map,
     });
     marker.setMap(map);
-  }
+
+       //인포윈도우
+  var infowindow = new google.maps.InfoWindow();
+
+  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        //html로 표시될 인포 윈도우의 내용
+                        infowindow.setContent(pointArray[i].place);
+                        //인포윈도우가 표시될 위치
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+                
+                if (marker) {
+                    marker.addListener('click', function() {
+                        //중심 위치를 클릭된 마커의 위치로 변경
+                        map.setCenter(this.getPosition());
+                        //마커 클릭 시의 줌 변화
+                        map.setZoom(14);
+                    });
+                }
 }
+  }
+
+
 //웹소켓 서버에 접속
 function connectServer() {
   webSocket = new WebSocket("ws://127.0.0.1:7979");
