@@ -54,7 +54,7 @@ function createIcon(map, pointArray) {
                         //중심 위치를 클릭된 마커의 위치로 변경
                         map.setCenter(this.getPosition());
                         //마커 클릭 시의 줌 변화
-                        map.setZoom(14);
+                        map.setZoom(16);
                     });
                 }
 }
