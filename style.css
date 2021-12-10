@@ -243,3 +243,45 @@ nav {
     padding-top: 12px;
 }
 
+.wrap {
+  width: 200px;
+}
+
+.text-box {
+  font-family:'Noto Sans KR', sans-serif; 
+  font-size: 12px;
+}
+
+.img-box { 
+  overflow: hidden;
+  max-height: 100px;
+  width: 100%; 
+  margin: -20px auto 0;
+}
+
+h4 {
+  text-align: center; 
+  font-weight: 400; 
+  padding: 10px; 
+  background-color: #4BB69C; 
+  color: white; 
+  margin: 0; 
+  border-radius: 2px 2px 0 0;
+}
+
+.cleanliness {
+  font-size: 13px; 
+  color: red;
+}
+
+.waste {
+  font-size: 10px; 
+  width: 70px; 
+  text-align: center; 
+  padding: 2px; 
+  background-color: #FFFFFF; 
+  color: gray; 
+  border-radius: 8px; 
+  border: 1px solid; 
+  border-color: grey;
+}

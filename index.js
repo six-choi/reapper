@@ -10,9 +10,156 @@ function myMap() {
 
   //마커 추가하기
   var pointArray = [
-    { place: "은평구", lat: 37.59189, lng: 126.91273, cleanliness: 1 },
-    { place: "은평구", lat: 37.59172, lng: 126.9136, cleanliness: 5 },
-    { place: "은평구", lat: 37.59381, lng: 126.91354, cleanliness: 3 },
+    {
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로21길 12</b></h4><br><div class="img-box"><img src="images/eunpungro21gil.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 16시 05분</p><hr><b>청결도</b><p class="cleanliness">★★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
+    "lat": 37.60171,
+    "lng": 126.93312,
+    "cleanliness": 5
+  },
+  {
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로21길 16</b></h4><br><div class="img-box"><img src="images/21gil16.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 16시 05분</p><hr><b>청결도</b><p class="cleanliness">★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
+    "lat": 37.60179,
+    "lng": 126.93298,
+    "cleanliness": 3
+  },
+  {
+    "place": "은평로21길 4 31-14",
+    "lat": 37.60197,
+    "lng": 126.931,
+    "cleanliness": 2
+  },
+  {
+    "place": "은평구 21길 44",
+    "lat": 37.60296,
+    "lng": 126.92953,
+    "cleanliness": 2
+  },
+  {
+    "place": "은평세무소",
+    "lat": 37.60188,
+    "lng": 126.92684,
+    "cleanliness": 2
+  },
+  {
+    "place": "은평로12길 6 맞은편",
+    "lat": 37.60047,
+    "lng": 126.92522,
+    "cleanliness": 2
+  },
+  {
+    "place": "은평로12길 8-14",
+    "lat": 37.60013,
+    "lng": 126.92445,
+    "cleanliness": 2
+  },
+  {
+    "place": "은평구 12길 7-11",
+    "lat": 37.6,
+    "lng": 126.92399,
+    "cleanliness": 2
+  },
+  {
+    "place": "은평로 10길 11",
+    "lat": 37.5997,
+    "lng": 126.92339,
+    "cleanliness": 2
+  },
+  {
+    "place": "응암로 328",
+    "lat": 37.60015,
+    "lng": 126.92262,
+    "cleanliness": 2
+  },
+  {
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 응암로 21가길 5</b></h4><br><div class="img-box"><img src="images/Eungam-ro 21gagill5.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 17시 59분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
+    "lat": 37.59436,
+    "lng": 126.91654,
+    "cleanliness": 2
+  },
+  {
+    "place": "증산로401-16",
+    "lat": 37.59241,
+    "lng": 126.91296,
+    "cleanliness": 1
+  },
+  {
+    "place": "증산로395",
+    "lat": 37.59189,
+    "lng": 126.91273,
+    "cleanliness": 1
+  },
+  {
+    "place": "증산로397",
+    "lat": 37.59172,
+    "lng": 126.9136,
+    "cleanliness": 1
+  },
+  {
+    "place": "가좌로276-18",
+    "lat": 37.59381,
+    "lng": 126.91354,
+    "cleanliness": 5
+  },
+  {
+    "place": "가좌로 276-11",
+    "lat": 37.59386,
+    "lng": 126.91326,
+    "cleanliness": 7
+  },
+  {
+    "place": "증산로19길 7-7",
+    "lat": 37.5942,
+    "lng": 126.91356,
+    "cleanliness": 1
+  },
+  {
+    "place": "증산로19길 7-10",
+    "lat": 37.59404,
+    "lng": 126.91348,
+    "cleanliness": 3
+  },
+  {
+    "place": "증산로19길 7-4 맞은편",
+    "lat": 37.59447,
+    "lng": 126.91355,
+    "cleanliness": 3
+  },
+  {
+    "place": "증산로19길 9",
+    "lat": 37.59475,
+    "lng": 126.91357,
+    "cleanliness": 3
+  },
+  {
+    "place": "증산로 19길 9-1",
+    "lat": 37.59477,
+    "lng": 126.91332,
+    "cleanliness": 3
+  },
+  {
+    "place": "증산로19길 14-2",
+    "lat": 37.59505,
+    "lng": 126.913,
+    "cleanliness": 8
+  },
+  {
+    "place": "증산로19길 14-3",
+    "lat": 37.59525,
+    "lng": 126.91299,
+    "cleanliness": 2
+  },
+  {
+    "place": "증산로21길 12",
+    "lat": 37.59599,
+    "lng": 126.91341,
+    "cleanliness": 2
+  },
+  {
+    "place": "증산로21길 7",
+    "lat": 37.59588,
+    "lng": 126.91411,
+    "cleanliness": 1
+  }  
   ];
   createIcon(map, pointArray);
 
@@ -30,14 +177,18 @@ function createIcon(map, pointArray) {
       fillColor: "#FF0000",
       fillOpacity: 1,
       strokeWeight: 0,
-      scale: 1,
+      scale: 0.3,
       scaledSize: new google.maps.Size(15, 15), //scaled size
       origin: new google.maps.Point(0, 0), //origin
       anchor: new google.maps.Point(0, 0), //anchor
     };
 
     if (item.cleanliness > 3) {
-      icon.fillColor = "#000000";
+      icon.fillColor = "#FFB800";
+    }
+
+    if (item.cleanliness > 6) {
+      icon.fillColor = "#1DB505";
     }
 
     var marker = new google.maps.Marker({
