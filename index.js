@@ -17,55 +17,55 @@ function myMap() {
     "cleanliness": 5
   },
   {
-    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로21길 16</b></h4><br><div class="img-box"><img src="images/21gil16.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 16시 05분</p><hr><b>청결도</b><p class="cleanliness">★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로21길 16</b></h4><br><div class="img-box"><img src="images/21gil16.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 16시 25분</p><hr><b>청결도</b><p class="cleanliness">★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.60179,
     "lng": 126.93298,
     "cleanliness": 3
   },
   {
-    "place": "은평로21길 4 31-14",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로21길 4 31-14</b></h4><br><div class="img-box"><img src="images/21gil4.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 16시 30분</p><hr><b>청결도</b><p class="cleanliness">★★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.60197,
     "lng": 126.931,
-    "cleanliness": 2
+    "cleanliness": 7
   },
   {
-    "place": "은평구 21길 44",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평구 21길 44</b></h4><br><div class="img-box"><img src="images/21gil4.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 16시 38분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.60296,
     "lng": 126.92953,
     "cleanliness": 2
   },
   {
-    "place": "은평세무소",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평세무소</b></h4><br><div class="img-box"><img src="images/eunpung.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 16시 51분</p><hr><b>청결도</b><p class="cleanliness">★★★★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.60188,
     "lng": 126.92684,
-    "cleanliness": 2
+    "cleanliness": 10
   },
   {
-    "place": "은평로12길 6 맞은편",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로 12길 6 맞은편</b></h4><br><div class="img-box"><img src="images/12gil6.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 17시 00분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.60047,
     "lng": 126.92522,
     "cleanliness": 2
   },
   {
-    "place": "은평로12길 8-14",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로 12길 8-14</b></h4><br><div class="img-box"><img src="images/12gil6.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 17시 02분</p><hr><b>청결도</b><p class="cleanliness">★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.60013,
     "lng": 126.92445,
-    "cleanliness": 2
+    "cleanliness": 1
   },
   {
-    "place": "은평구 12길 7-11",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로 12길 7-11</b></h4><br><div class="img-box"><img src="images/12gil7.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 17시 03분</p><hr><b>청결도</b><p class="cleanliness">★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.6,
     "lng": 126.92399,
     "cleanliness": 2
   },
   {
-    "place": "은평로 10길 11",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 은평로 10길 11</b></h4><br><div class="img-box"><img src="images/10gil11.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 17시 07분</p><hr><b>청결도</b><p class="cleanliness">★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.5997,
     "lng": 126.92339,
     "cleanliness": 2
   },
   {
-    "place": "응암로 328",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 응암로 328</b></h4><br><div class="img-box"><img src="images/328.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 17시 12분</p><hr><b>청결도</b><p class="cleanliness">★</p><hr><p class="waste">생활 페기물</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.60015,
     "lng": 126.92262,
     "cleanliness": 2
@@ -77,88 +77,88 @@ function myMap() {
     "cleanliness": 2
   },
   {
-    "place": "증산로401-16",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로 401-16</b></h4><br><div class="img-box"><img src="images/Jeungsanro401.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 01분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59241,
     "lng": 126.91296,
     "cleanliness": 1
   },
   {
-    "place": "증산로395",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로 395</b></h4><br><div class="img-box"><img src="images/jeungsanro395.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 24분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59189,
     "lng": 126.91273,
     "cleanliness": 1
   },
   {
-    "place": "증산로397",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로 397</b></h4><br><div class="img-box"><img src="images/jeungsanro397.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 37분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59172,
     "lng": 126.9136,
     "cleanliness": 1
   },
   {
-    "place": "가좌로276-18",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 가좌로 276-18</b></h4><br><div class="img-box"><img src="images/gaja276-1.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 42분</p><hr><b>청결도</b><p class="cleanliness">★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59381,
     "lng": 126.91354,
-    "cleanliness": 5
+    "cleanliness": 1
   },
   {
-    "place": "가좌로 276-11",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 가좌로 276-11</b></h4><br><div class="img-box"><img src="images/gaja276.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 42분</p><hr><b>청결도</b><p class="cleanliness">★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59386,
     "lng": 126.91326,
-    "cleanliness": 7
+    "cleanliness": 3
   },
   {
-    "place": "증산로19길 7-7",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로19길 7-7</b></h4><br><div class="img-box"><img src="images/jeungsanro19gil7-7.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 48분</p><hr><b>청결도</b><p class="cleanliness">★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.5942,
     "lng": 126.91356,
     "cleanliness": 1
   },
   {
-    "place": "증산로19길 7-10",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로19길 7-10</b></h4><br><div class="img-box"><img src="images/jeungsanro19gil7-10.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 48분</p><hr><b>청결도</b><p class="cleanliness">★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59404,
     "lng": 126.91348,
     "cleanliness": 3
   },
   {
-    "place": "증산로19길 7-4 맞은편",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로19길 7-4</b></h4><br><div class="img-box"><img src="images/jeungsanro19gil7-4.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 48분</p><hr><b>청결도</b><p class="cleanliness">★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59447,
     "lng": 126.91355,
     "cleanliness": 3
   },
   {
-    "place": "증산로19길 9",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로19길 9</b></h4><br><div class="img-box"><img src="images/jeungsanro19gil9-1.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 50분</p><hr><b>청결도</b><p class="cleanliness">★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59475,
     "lng": 126.91357,
-    "cleanliness": 3
+    "cleanliness": 5
   },
   {
-    "place": "증산로 19길 9-1",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로19길 9-1</b></h4><br><div class="img-box"><img src="images/jeungsanro19gil9.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 50분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59477,
     "lng": 126.91332,
     "cleanliness": 3
   },
   {
-    "place": "증산로19길 14-2",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로19길 14-2</b></h4><br><div class="img-box"><img src="images/jeungsanro19gil14-2.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 52분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59505,
     "lng": 126.913,
-    "cleanliness": 8
+    "cleanliness": 1
   },
   {
-    "place": "증산로19길 14-3",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로19길 14-3</b></h4><br><div class="img-box"><img src="images/jeungsanro19gil14.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 54분</p><hr><b>청결도</b><p class="cleanliness">★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59525,
     "lng": 126.91299,
     "cleanliness": 2
   },
   {
-    "place": "증산로21길 12",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로 21길 12</b></h4><br><div class="img-box"><img src="images/jeungsanro21gil12.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 20시 58분</p><hr><b>청결도</b><p class="cleanliness">★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59599,
     "lng": 126.91341,
-    "cleanliness": 2
+    "cleanliness": 5
   },
   {
-    "place": "증산로21길 7",
+    "place": '<div class="wrap"><div class="text-box"><h4><b>서울특별시 은평구 증산로 21길 7</b></h4><br><div class="img-box"><img src="images/jeungsanro21gil7.png" style="width: 100%"></div><hr><b>제보시점</b><p>2021년 11월 3일 21시 05분</p><hr><b>청결도</b><p class="cleanliness">★★★★</p><hr><p class="waste">일반 쓰레기</p><p class="waste">혼합된 쓰레기</p></div>',
     "lat": 37.59588,
     "lng": 126.91411,
-    "cleanliness": 1
+    "cleanliness": 5
   }  
   ];
   createIcon(map, pointArray);
