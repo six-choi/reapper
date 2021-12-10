@@ -10,9 +10,9 @@ function myMap() {
 
   //마커 추가하기
   var pointArray = [
-    { place: "은평구", lat: 37.59189, lng: 126.91273 },
-    { place: "은평구", lat: 37.59172, lng: 126.9136 },
-    { place: "은평구", lat: 37.59381, lng: 126.91354 },
+    { place: "은평구", lat: 37.59189, lng: 126.91273, cleanliness: 1 },
+    { place: "은평구", lat: 37.59172, lng: 126.9136, cleanliness: 5 },
+    { place: "은평구", lat: 37.59381, lng: 126.91354, cleanliness: 3 },
   ];
   createIcon(map, pointArray);
 
@@ -23,43 +23,56 @@ function myMap() {
 function createIcon(map, pointArray) {
   for (var i = 0; i < pointArray.length; i++) {
     //보여질 아이콘을 제이슨 객체로 정의
+    const item = pointArray[i];
+
     var icon = {
-      url: "./images/reddot.png", //url
+      path: "M-20,0a20,20 0 1,0 40,0a20,20 0 1,0 -40,0",
+      fillColor: "#FF0000",
+      fillOpacity: 1,
+      strokeWeight: 0,
+      scale: 1,
       scaledSize: new google.maps.Size(15, 15), //scaled size
       origin: new google.maps.Point(0, 0), //origin
       anchor: new google.maps.Point(0, 0), //anchor
     };
 
+    if (item.cleanliness > 3) {
+      icon.fillColor = "#000000";
+    }
+
     var marker = new google.maps.Marker({
-      position: pointArray[i],
+      position: item,
       icon: icon,
       map: map,
     });
     marker.setMap(map);
 
-       //인포윈도우
-  var infowindow = new google.maps.InfoWindow();
+    //인포윈도우
+    var infowindow = new google.maps.InfoWindow();
 
-  google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                    return function() {
-                        //html로 표시될 인포 윈도우의 내용
-                        infowindow.setContent(pointArray[i].place);
-                        //인포윈도우가 표시될 위치
-                        infowindow.open(map, marker);
-                    }
-                })(marker, i));
-                
-                if (marker) {
-                    marker.addListener('click', function() {
-                        //중심 위치를 클릭된 마커의 위치로 변경
-                        map.setCenter(this.getPosition());
-                        //마커 클릭 시의 줌 변화
-                        map.setZoom(16);
-                    });
-                }
-}
+    google.maps.event.addListener(
+      marker,
+      "click",
+      (function (marker, i) {
+        return function () {
+          //html로 표시될 인포 윈도우의 내용
+          infowindow.setContent(pointArray[i].place);
+          //인포윈도우가 표시될 위치
+          infowindow.open(map, marker);
+        };
+      })(marker, i)
+    );
+
+    if (marker) {
+      marker.addListener("click", function () {
+        //중심 위치를 클릭된 마커의 위치로 변경
+        map.setCenter(this.getPosition());
+        //마커 클릭 시의 줌 변화
+        map.setZoom(16);
+      });
+    }
   }
-
+}
 
 //웹소켓 서버에 접속
 function connectServer() {

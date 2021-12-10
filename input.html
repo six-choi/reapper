@@ -125,7 +125,9 @@
   </head>
   <body>
     <div class="header">
-      <h1><a href="index.html">리퍼: 쓰레기 지도</a><img src=./images/Vector.png></h1>
+      <h1>
+        <a href="index.html">리퍼: 쓰레기 지도</a><img src=./images/Vector.png>
+      </h1>
     </div>
     <hr style="margin: 0" />
     <form action="/action_page.php">
@@ -240,21 +242,21 @@
       </div>
       <div class="check">
         <div>
-          <input type="checkbox" name="Nomal" value="yes" />
+          <input type="checkbox" name="waste" value="일반쓰레기" />
           일반쓰레기
         </div>
         <div>
-          <input type="checkbox" name="Recycle" value="yes" />
+          <input type="checkbox" name="waste" value="재활용쓰레기" />
           재활용쓰레기
         </div>
       </div>
       <div class="check">
         <div>
-          <input type="checkbox" name="Food" value="yes" />
+          <input type="checkbox" name="waste" value="음식물쓰레기" />
           음식물쓰레기
         </div>
         <div>
-          <input type="checkbox" name="Mix" value="yes" />
+          <input type="checkbox" name="waste" value="혼합된쓰레기" />
           혼합된쓰레기
         </div>
       </div>
@@ -265,16 +267,16 @@
       <div class="container">
         <h1 id="status">이 장소에 대해서 알려주세요</h1>
         <br />
-        <button type="button" class="btn">
+        <button type="button" class="btn js-btn-condition">
           쓰레기가 여기저기 흩어져 있어요
         </button>
-        <button type="button" class="btn">
+        <button type="button" class="btn js-btn-condition">
           분리수거되지 않고 혼합 배출되어 있어요
         </button>
-        <button type="button" class="btn">
+        <button type="button" class="btn js-btn-condition">
           세척되지 않은 채로 배출되어 있어요
         </button>
-        <button type="button" class="btn">
+        <button type="button" class="btn js-btn-condition">
           쓰레기 배출 금지 안내가 있는 곳에 배출되어 있어요
         </button>
         <button type="button" class="btn">잘못된 봉투로 배출되어 있어요</button>
