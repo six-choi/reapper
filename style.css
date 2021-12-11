@@ -230,11 +230,17 @@ nav {
 }
 
 /* Overwrite default styles of hr */
-    hr {
-        border: 8px solid #f1f1f1;
-        margin-bottom: 5px;
-        margin-top: 15px;
-    }
+hr {
+  border: 8px solid #f1f1f1;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.hr {
+  border: 3px solid #f1f1f1;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
 
 #footer {
     text-align: center;
