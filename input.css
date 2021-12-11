@@ -307,4 +307,10 @@ body {
     color: var(--color-white);
     padding-top: 12px;
 }
-    
+
+.agree {
+    margin: 8px;
+    color: gray;
+    font-size: var(--size-3-double);
+    text-align: justify;
+}
